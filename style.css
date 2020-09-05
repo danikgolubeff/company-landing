@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{box-sizing: border-box;
+
+}
+.header-img-back{
+    background-image: url(./images/backphoto.png);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.studio-name{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.studio-slogan{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.button-projects{
+    background-color: #4985FF;
+    border-radius: 30;
+}
+.text-button {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+
+color: #FFFFFF;
+}
