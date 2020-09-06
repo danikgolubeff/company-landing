@@ -5,26 +5,43 @@ body{
 *{box-sizing: border-box;
 
 }
-.header-img-back{
+@font-face{
+    font-family: Montserrat;
+    src: url("fonts/Montserrat-Regular.ttf")
+}
+.text{
+    font-family: Montserrat;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.general-layout{
     background-image: url(./images/backphoto.png);
     height: 100vh;
+    
+}
+.general-layout__container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 100%;
+
 }
-.studio-name{
-    font-family: Montserrat;
+.layout-we-create__studio-name{
+    
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    
+
     
     text-align: center;
     
     color: #FFFFFF;
 }
-.studio-slogan{
+.layout-we-create__studio-slogan{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
@@ -34,17 +51,104 @@ body{
     
     color: #FFFFFF;
 }
-.button-projects{
+.button{
     background-color: #4985FF;
-    border-radius: 30;
-}
-.text-button {
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 45px;
     font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.about-us-layout__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
 
-color: #FFFFFF;
+}
+
+.about-us-layout__for-corporation{
+    font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 53px;
+text-align: center;
+}
+.about-us-layout__content{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.about-us-layout__external-figure{
+    width: 110px;
+    height: 110px;
+    border:  1px solid #E0E0E0;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+.about-us-layout__iternal-figure{
+    width: 90px;
+    height: 90px;
+    border:  1px solid #4985FF;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-us-layout__internal-img{
+    background-image: url(./images/paper.png);
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.about-us-layout__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.about-us-layout__services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+.about-us-layout__service-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    
+    color: #000000;
+}
+.about-us-layout__service-discription{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    
+    /* grey */
+    
+    color: #999999;
 }
