@@ -23,7 +23,7 @@ a[target]{
     background-color: rgb(198, 14, 235);
     color: white;
     animation-name: layout;
-    animation-duration: 1s;
+    animation-duration: 15s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     /* animation-direction: alternate; */
@@ -36,7 +36,7 @@ text-align: center;
         transform: rotate(0deg);
     }
     to{
-        transform: rotate (360deg);
+        transform: rotate(360deg);
     }
 }
 .testio:hover {
@@ -48,9 +48,8 @@ text-align: center;
     border-radius: 300px;
     background-color: rgb(36, 36, 36);
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+   
     
     
 }
@@ -59,41 +58,41 @@ text-align: center;
         transform: rotate(0deg);
     }
     to{
-        transform: rotate (360deg);
+        transform: rotate(360deg);
     }
+    
 }
-.clock:hover {
-    animation-play-state: paused;
-}
+
 .clock-vector-big{
     background-color: white;
     width: 150px;
     height: 4px;
-    animation-name: layout;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    /* animation-direction: alternate; */
-    animation-delay: 1s;
-    transform: rotate(360deg);
     transform-origin: right;
     margin-right: 149px;
-    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    animation-name: clock_layout;
+    animation-duration: 60s;
+    animation-timing-function: steps(60);
+    animation-iteration-count: infinite;
+    }
 
+
+.clock-vector-big:hover{
+    animation-play-state:paused
 }
 .clock-vector-small{
     background-color: white;
     width: 75px;
-    height: 9px;
-    animation-name: layout;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    /* animation-direction: alternate; */
-    animation-delay: 1s;
-    transform: rotate(360deg);
+    height: 7px;
     transform-origin: right;
     margin-right: 149px;
-    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    animation-name: clock_layout;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+     
 
 }
