@@ -1,31 +1,99 @@
-.test-section{
-    width: 500px;
-    height: 400px;
-    background-color: aqua;
+/* .parent >div { */
+    /* color: green; */
+/* } */
+div ~div{
+    color: red;
+}
+.test + div{
+    color: blue;
+}
+a[target]{
+    color: gray;
+}
+.test2:before {
+    content: "+";
+}
+.test2:after{
+    content: "-";
+}
+.testio{
+    width: 600px;
+    height: 600px;
+    border-radius: 600px;
+    background-color: rgb(198, 14, 235);
+    color: white;
+    animation-name: layout;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-delay: 2s;
+transform: rotate(360deg);
+text-align: center;
+}
+@keyframes layout {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate (360deg);
+    }
+}
+.testio:hover {
+    animation-play-state: paused;
+}
+.clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    background-color: rgb(36, 36, 36);
+    color: white;
     display: flex;
-    /* flex-direction: row; */
-    /* flex-direction: row-reverse; */
-    /* justify-content: flex-start; */
-    /* justify-content: flex-end; */
-    /* justify-content: center; */
-    /* justify-content: space-between; */
-    justify-content: space-around;
     align-items: center;
-    /* align-items: flex-end; */
+    justify-content: center;
+    
+    
+}
+@keyframes clock_layout {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate (360deg);
+    }
+}
+.clock:hover {
+    animation-play-state: paused;
+}
+.clock-vector-big{
+    background-color: white;
+    width: 150px;
+    height: 4px;
+    animation-name: layout;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-delay: 1s;
+    transform: rotate(360deg);
+    transform-origin: right;
+    margin-right: 149px;
+    flex-shrink: 0;
 
 }
-.test-rectangle1{
-    width: 100px;
-    height: 100px;
-    background-color: brown;
-}
-.test-rectangle2{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(165, 157, 42);
-}
-.test-rectangle3{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(140, 42, 165);
+.clock-vector-small{
+    background-color: white;
+    width: 75px;
+    height: 9px;
+    animation-name: layout;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-delay: 1s;
+    transform: rotate(360deg);
+    transform-origin: right;
+    margin-right: 149px;
+    flex-shrink: 0;
+
 }
